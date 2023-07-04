@@ -25,10 +25,10 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-@Testcontainers
+//@Testcontainers
 public class EmployeeControllerIT {
 
-    @Container
+    /*@Container
     private static final MySQLContainer MY_SQL_CONTAINER = new MySQLContainer("mysql:latest");
 
     @DynamicPropertySource
@@ -36,7 +36,7 @@ public class EmployeeControllerIT {
         registry.add("spring.datasource.url", MY_SQL_CONTAINER::getJdbcUrl);
         registry.add("spring.datasource.username", MY_SQL_CONTAINER::getUsername);
         registry.add("spring.datasource.password", MY_SQL_CONTAINER::getPassword);
-    }
+    }*/
 
     @Autowired
     private MockMvc mockMvc;
